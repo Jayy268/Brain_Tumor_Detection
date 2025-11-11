@@ -21,7 +21,7 @@ The repository includes the training scripts for both paths and a final analysis
 
 2.  **Get the Data:**
     This project uses the Brain Tumor MRI Dataset. You can download it from Kaggle:
-    [Link to Kaggle Dataset](https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri)
+    [Link to Kaggle Dataset](https://www.kaggle.com/datasets/arwabasal/brain-tumor-mri-detection)
     
     You will need to place the dataset folder in the main project directory.
 
@@ -54,3 +54,4 @@ The performance of the two paths was compared based on their highest achieved va
 * **Performance:** The Transfer Learning model (Path 2) significantly outperformed the custom-built CNN (Path 1) by **14 percentage points**.
 * **Relevance:** This project clearly demonstrates the power of transfer learning for medical image analysis. By leveraging the pre-trained features of `MobileNetV2`, the model could focus on learning the specific features of brain tumors, leading to much higher accuracy than a model trying to learn *all* features from scratch.
 * **Fine-Tuning:** Further experiments (as documented in the notebooks) showed that fine-tuning the `MobileNetV2` model did *not* improve performance, indicating the "frozen" base model provided the optimal feature set for this task.
+
