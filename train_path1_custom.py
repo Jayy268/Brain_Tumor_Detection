@@ -8,7 +8,7 @@ from model_builder import build_custom_cnn
 # --- 1. Set Parameters ---
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
-DATASET_PATH = '/content/drive/My Drive/Computer Vision Project/datasets/brain_tumor_dataset'
+DATASET_PATH = 'brain_tumor_dataset'
 COLOR_MODE_P1 = 'grayscale'
 INPUT_SHAPE_P1 = (224, 224, 1) # Must match our color mode (1 channel)
 LEARNING_RATE = 0.0001
@@ -48,5 +48,6 @@ history_p1 = model_p1.fit(
     epochs=EPOCHS,
     callbacks=[early_stop, reduce_lr]
 )
+
 
 print("Training complete for Path 1.")
