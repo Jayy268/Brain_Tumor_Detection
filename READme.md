@@ -66,6 +66,9 @@ The most significant outcome of this study was the failure of the Custom CNN on 
 
     # Train and evaluate the Transfer Learning Model
     python src/train_transfer_learning.py
+
+    # To verify the clinical metrics (Sensitivity/Specificity)
+    python evaluate_model.py
     ```
 
 ## 🛠️ Tech Stack
@@ -77,3 +80,4 @@ The most significant outcome of this study was the failure of the Custom CNN on 
 
 ### 👨‍💻 Author's Note
 This project was designed to simulate a real-world R&D pipeline—moving from initial prototyping to rigorous stress-testing against clinical realities. It highlights my focus on building AI systems that are not just accurate on paper, but safe and effective in the real world.
+
