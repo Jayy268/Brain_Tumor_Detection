@@ -52,3 +52,10 @@ history_p2 = model_p2.fit(
 
 
 print("Training complete for Path 2.")
+
+# --- 7. Save Model for Evaluation ---
+# Create directory if it doesn't exist
+import os
+os.makedirs('saved_models', exist_ok=True)
+model_p2.save('saved_models/mobilenetv2_transfer.keras')
+print("Model saved to saved_models/mobilenetv2_transfer.keras")
